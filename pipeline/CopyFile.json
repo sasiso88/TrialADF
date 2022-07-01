@@ -50,6 +50,10 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"expression": {
+						"value": "@pipeline().parameters.filename",
+						"type": "Expression"
+					},
 					"ifFalseActivities": [
 						{
 							"name": "Copy data1",
