@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf203arham"
+		},
+		"LS_Input_Storage_accountKey": {
+			"value": ""
+		},
+		"LS_Output_Storage_accountKey": {
+			"value": ""
+		},
+		"LS_Input_Storage_properties_typeProperties_url": {
+			"value": "https://adfdp203sa.dfs.core.windows.net/"
+		},
+		"LS_Output_Storage_properties_typeProperties_url": {
+			"value": "https://adfdp203sa.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
