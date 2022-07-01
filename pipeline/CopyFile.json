@@ -17,7 +17,13 @@
 				"typeProperties": {
 					"dataset": {
 						"referenceName": "DS_Input_SA",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"filename": {
+								"value": "@pipeline().parameters.filename",
+								"type": "Expression"
+							}
+						}
 					},
 					"fieldList": [
 						"exists"
