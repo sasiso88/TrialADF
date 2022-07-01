@@ -95,6 +95,11 @@
 				}
 			}
 		],
+		"parameters": {
+			"datasetFileName": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
