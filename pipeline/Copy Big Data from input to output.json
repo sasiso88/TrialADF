@@ -15,8 +15,36 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
+					"source": {
+						"type": "BinarySource",
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true
+						},
+						"formatSettings": {
+							"type": "BinaryReadSettings"
+						}
+					},
+					"sink": {
+						"type": "BinarySink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						}
+					},
 					"enableStaging": false
-				}
+				},
+				"inputs": [
+					{
+						"referenceName": "DS_Input_SA",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DS_Output_SA",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
 		"annotations": []
