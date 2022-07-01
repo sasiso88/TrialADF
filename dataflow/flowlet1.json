@@ -1,0 +1,37 @@
+{
+	"name": "flowlet1",
+	"properties": {
+		"type": "Flowlet",
+		"typeProperties": {
+			"sources": [
+				{
+					"name": "source1"
+				},
+				{
+					"name": "source2"
+				}
+			],
+			"sinks": [],
+			"transformations": [
+				{
+					"name": "join1"
+				},
+				{
+					"name": "output1"
+				}
+			],
+			"scriptLines": [
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false) ~> source1",
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false) ~> source2",
+				"source1 join(ERROR_FUNCTION('') == ERROR_FUNCTION(''),",
+				"     joinType:'inner',",
+				"     matchType:'exact',",
+				"     ignoreSpaces: false,",
+				"     broadcast: 'auto')~> join1",
+				"join1 output() ~> output1"
+			]
+		}
+	}
+}
