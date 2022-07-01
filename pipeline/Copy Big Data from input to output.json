@@ -5,14 +5,7 @@
 			{
 				"name": "CopyInput2Output",
 				"type": "Copy",
-				"dependsOn": [
-					{
-						"activity": "Delay10Second",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
+				"dependsOn": [],
 				"policy": {
 					"timeout": "0.00:20:00",
 					"retry": 3,
@@ -52,15 +45,6 @@
 						"type": "DatasetReference"
 					}
 				]
-			},
-			{
-				"name": "Delay10Second",
-				"type": "Wait",
-				"dependsOn": [],
-				"userProperties": [],
-				"typeProperties": {
-					"waitTimeInSeconds": 10
-				}
 			},
 			{
 				"name": "Delay1Second",
