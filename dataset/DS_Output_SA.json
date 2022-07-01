@@ -1,0 +1,17 @@
+{
+	"name": "DS_Output_SA",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Output_Storage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "output"
+			}
+		}
+	}
+}
