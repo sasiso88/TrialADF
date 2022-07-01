@@ -52,7 +52,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"expression": {
-						"value": "@pipeline().parameters.filename",
+						"value": "@activity('Get Metadata1').output.exists",
 						"type": "Expression"
 					},
 					"ifFalseActivities": [
